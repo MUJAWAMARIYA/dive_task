@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @request.Name %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @request.Address %>
+</p>
+
+<p>
+  <strong>Issues:</strong>
+  <%= @request.Issues %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= image_tag @request.Image.url %>
+</p>
+
+<%= link_to 'Edit', edit_request_path(@request) %> |
+<%= link_to 'Back', requests_path %>
